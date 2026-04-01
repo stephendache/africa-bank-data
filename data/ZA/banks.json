@@ -1,0 +1,65 @@
+{
+  "country": "ZA",
+  "banks": [
+    {
+      "name": "Absa Bank South Africa",
+      "code": "632005",
+      "slug": "absa-bank-south-africa",
+      "short_name": "Absa",
+      "website": "https://www.absa.co.za",
+      "support_email": "absa@absa.africa",
+      "type": "commercial",
+      "aliases": [
+        "absa south africa"
+      ]
+    },
+    {
+      "name": "Capitec Bank",
+      "code": "470010",
+      "slug": "capitec-bank",
+      "short_name": "Capitec",
+      "website": "https://www.capitecbank.co.za",
+      "support_email": "clientcare@capitecbank.co.za",
+      "type": "commercial",
+      "aliases": [
+        "capitec"
+      ]
+    },
+    {
+      "name": "First National Bank",
+      "code": "250655",
+      "slug": "first-national-bank",
+      "short_name": "FNB",
+      "website": "https://www.fnb.co.za",
+      "support_email": "rbjacobs@fnb.co.za",
+      "type": "commercial",
+      "aliases": [
+        "fnb"
+      ]
+    },
+    {
+      "name": "Nedbank",
+      "code": "198765",
+      "slug": "nedbank",
+      "short_name": "Nedbank",
+      "website": "https://personal.nedbank.co.za",
+      "support_email": "nedbank@nedbank.co.za",
+      "type": "commercial",
+      "aliases": [
+        "nedbank"
+      ]
+    },
+    {
+      "name": "Standard Bank South Africa",
+      "code": "051001",
+      "slug": "standard-bank-south-africa",
+      "short_name": "Standard Bank",
+      "website": "https://www.standardbank.co.za",
+      "support_email": "information@standardbank.co.za",
+      "type": "commercial",
+      "aliases": [
+        "standard bank"
+      ]
+    }
+  ]
+}

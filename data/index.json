@@ -1,0 +1,28 @@
+{
+  "countries": [
+    {
+      "code": "NG",
+      "name": "Nigeria"
+    },
+    {
+      "code": "KE",
+      "name": "Kenya"
+    },
+    {
+      "code": "GH",
+      "name": "Ghana"
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa"
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda"
+    },
+    {
+      "code": "EG",
+      "name": "Egypt"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "country": "RW",
+  "banks": [
+    {
+      "name": "Bank of Kigali",
+      "code": "BK",
+      "slug": "bank-of-kigali",
+      "short_name": "BK",
+      "website": "https://www.bk.rw",
+      "support_email": "customerservice@bk.rw",
+      "type": "commercial",
+      "aliases": [
+        "bk"
+      ]
+    },
+    {
+      "name": "Equity Bank Rwanda",
+      "code": "EQR",
+      "slug": "equity-bank-rwanda",
+      "short_name": "Equity",
+      "website": "https://equitygroupholdings.com/rw",
+      "support_email": "info@equitybank.co.rw",
+      "type": "commercial",
+      "aliases": [
+        "equity rwanda"
+      ]
+    },
+    {
+      "name": "I&M Bank Rwanda",
+      "code": "IMR",
+      "slug": "i-and-m-bank-rwanda",
+      "short_name": "I&M",
+      "website": "https://www.imbank.com/rwanda",
+      "support_email": "customercare@imbank.co.rw",
+      "type": "commercial",
+      "aliases": [
+        "i&m rwanda",
+        "im bank rwanda"
+      ]
+    },
+    {
+      "name": "KCB Bank Rwanda",
+      "code": "KCBR",
+      "slug": "kcb-bank-rwanda",
+      "short_name": "KCB",
+      "website": "https://rw.kcbgroup.com",
+      "support_email": "contactcentre@rw.kcbgroup.com",
+      "type": "commercial",
+      "aliases": [
+        "kcb rwanda"
+      ]
+    },
+    {
+      "name": "Urwego Bank",
+      "code": "URW",
+      "slug": "urwego-bank",
+      "short_name": "Urwego",
+      "website": "https://www.urwegobank.com",
+      "support_email": "info@urwegobank.com",
+      "type": "microfinance",
+      "aliases": [
+        "urwego"
+      ]
+    }
+  ]
+}

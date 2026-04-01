@@ -1,0 +1,66 @@
+{
+  "country": "KE",
+  "banks": [
+    {
+      "name": "Absa Bank Kenya",
+      "code": "03",
+      "slug": "absa-bank-kenya",
+      "short_name": "Absa",
+      "website": "https://www.absabank.co.ke",
+      "support_email": "absa.kenya@absa.africa",
+      "type": "commercial",
+      "aliases": [
+        "absa kenya"
+      ]
+    },
+    {
+      "name": "Co-operative Bank of Kenya",
+      "code": "11",
+      "slug": "co-operative-bank-of-kenya",
+      "short_name": "Co-op Bank",
+      "website": "https://www.co-opbank.co.ke",
+      "support_email": "customercare@co-opbank.co.ke",
+      "type": "commercial",
+      "aliases": [
+        "coop bank",
+        "co-op bank"
+      ]
+    },
+    {
+      "name": "Equity Bank Kenya",
+      "code": "68",
+      "slug": "equity-bank-kenya",
+      "short_name": "Equity",
+      "website": "https://equitygroupholdings.com/ke",
+      "support_email": "info@equitybank.co.ke",
+      "type": "commercial",
+      "aliases": [
+        "equity bank"
+      ]
+    },
+    {
+      "name": "KCB Bank Kenya",
+      "code": "01",
+      "slug": "kcb-bank-kenya",
+      "short_name": "KCB",
+      "website": "https://ke.kcbgroup.com",
+      "support_email": "contactcentre@kcbgroup.com",
+      "type": "commercial",
+      "aliases": [
+        "kcb"
+      ]
+    },
+    {
+      "name": "NCBA Bank Kenya",
+      "code": "07",
+      "slug": "ncba-bank-kenya",
+      "short_name": "NCBA",
+      "website": "https://ke.ncbagroup.com",
+      "support_email": "contactcentre@ke.ncbagroup.com",
+      "type": "commercial",
+      "aliases": [
+        "ncba"
+      ]
+    }
+  ]
+}

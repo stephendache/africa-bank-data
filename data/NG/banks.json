@@ -1,0 +1,141 @@
+{
+  "country": "NG",
+  "banks": [
+    {
+      "name": "Access Bank",
+      "code": "044",
+      "slug": "access-bank",
+      "short_name": "Access",
+      "ussd": "*901#",
+      "website": "https://www.accessbankplc.com",
+      "support_email": "contactcenter@accessbankplc.com",
+      "type": "commercial",
+      "aliases": [
+        "access",
+        "access bank plc"
+      ]
+    },
+    {
+      "name": "Ecobank Nigeria",
+      "code": "050",
+      "slug": "ecobank-nigeria",
+      "short_name": "Ecobank",
+      "ussd": "*326#",
+      "website": "https://www.ecobank.com/ng/personal-banking",
+      "support_email": "engcontactcentre@ecobank.com",
+      "type": "commercial",
+      "aliases": [
+        "ecobank"
+      ]
+    },
+    {
+      "name": "Fidelity Bank",
+      "code": "070",
+      "slug": "fidelity-bank",
+      "short_name": "Fidelity",
+      "ussd": "*770#",
+      "website": "https://www.fidelitybank.ng",
+      "support_email": "true.serve@fidelitybank.ng",
+      "type": "commercial",
+      "aliases": [
+        "fidelity"
+      ]
+    },
+    {
+      "name": "First Bank of Nigeria",
+      "code": "011",
+      "slug": "first-bank-of-nigeria",
+      "short_name": "First Bank",
+      "ussd": "*894#",
+      "website": "https://www.firstbanknigeria.com",
+      "support_email": "firstcontact@firstbanknigeria.com",
+      "type": "commercial",
+      "aliases": [
+        "first bank",
+        "fbn"
+      ]
+    },
+    {
+      "name": "Guaranty Trust Bank",
+      "code": "058",
+      "slug": "guaranty-trust-bank",
+      "short_name": "GTBank",
+      "ussd": "*737#",
+      "website": "https://www.gtbank.com",
+      "support_email": "gtbankmailsupport@gtbank.com",
+      "type": "commercial",
+      "aliases": [
+        "gtbank",
+        "gtb"
+      ]
+    },
+    {
+      "name": "Stanbic IBTC Bank",
+      "code": "221",
+      "slug": "stanbic-ibtc-bank",
+      "short_name": "Stanbic IBTC",
+      "ussd": "*909#",
+      "website": "https://www.stanbicibtcbank.com",
+      "support_email": "customercarenigeria@stanbicibtc.com",
+      "type": "commercial",
+      "aliases": [
+        "stanbic",
+        "stanbic ibtc"
+      ]
+    },
+    {
+      "name": "Sterling Bank",
+      "code": "232",
+      "slug": "sterling-bank",
+      "short_name": "Sterling",
+      "ussd": "*822#",
+      "website": "https://sterling.ng",
+      "support_email": "customercare@sterling.ng",
+      "type": "commercial",
+      "aliases": [
+        "sterling"
+      ]
+    },
+    {
+      "name": "United Bank for Africa",
+      "code": "033",
+      "slug": "united-bank-for-africa",
+      "short_name": "UBA",
+      "ussd": "*919#",
+      "website": "https://www.ubagroup.com",
+      "support_email": "cfc@ubagroup.com",
+      "type": "commercial",
+      "aliases": [
+        "uba",
+        "united bank for africa"
+      ]
+    },
+    {
+      "name": "Wema Bank",
+      "code": "035",
+      "slug": "wema-bank",
+      "short_name": "Wema",
+      "ussd": "*945#",
+      "website": "https://www.wemabank.com",
+      "support_email": "purpleconnect@wemabank.com",
+      "type": "commercial",
+      "aliases": [
+        "wema",
+        "alat by wema"
+      ]
+    },
+    {
+      "name": "Zenith Bank",
+      "code": "057",
+      "slug": "zenith-bank",
+      "short_name": "Zenith",
+      "ussd": "*966#",
+      "website": "https://www.zenithbank.com",
+      "support_email": "info@zenithbank.com",
+      "type": "commercial",
+      "aliases": [
+        "zenith"
+      ]
+    }
+  ]
+}

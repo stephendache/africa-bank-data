@@ -6,6 +6,10 @@ This project aims to build an **open, reliable dataset of African banks** that d
 
 Because Africa has many countries and financial institutions, **community contributions are essential** to keep the data accurate and up to date.
 
+Again, thank you for contributing.
+
+This repository is designed to be easy to contribute to, even if you only want to add or fix data for one country.
+
 ---
 
 # Ways You Can Contribute
@@ -15,11 +19,12 @@ You can contribute by:
 * Adding banks for a new country
 * Updating existing bank information
 * Fixing incorrect bank codes
-* Adding USSD codes where available
+* Adding `ussd`, `website`, and `support_email` - where available
 * Adding bank logos
-* Improving documentation
+* improving validation scripts
 * Reporting data errors
 * Building SDKs or APIs using the dataset
+
 
 Even small contributions are valuable.
 
@@ -28,21 +33,36 @@ Even small contributions are valuable.
 # Project Structure
 
 ```
-africa-bank-data
+africa-bank-data/
 │
 ├── data/
-│   ├── NG.json
-│   ├── KE.json
-│   ├── GH.json
-│   └── ZA.json
+│   ├── index.json
+│   ├── NG/
+│   │   ├── banks.json
+│   │   └── metadata.json
+│   ├── KE/
+│   │   ├── banks.json
+│   │   └── metadata.json
+│   └── GH/
+│       ├── banks.json
+│       └── metadata.json
 │
 ├── logos/
+│   ├── NG/
+│   ├── KE/
+│   └── GH/
 │
 ├── packages/
+│   ├── js-sdk/
+│   └── python-sdk/
 │
 ├── api/
+│   └── src/
 │
-└── README.md
+├── README.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── .gitignore
 ```
 
 All country datasets live inside the **`data/` directory**.

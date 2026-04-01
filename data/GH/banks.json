@@ -1,0 +1,65 @@
+{
+  "country": "GH",
+  "banks": [
+    {
+      "name": "Absa Bank Ghana",
+      "code": "ABG",
+      "slug": "absa-bank-ghana",
+      "short_name": "Absa",
+      "website": "https://gh.absa.africa",
+      "support_email": "absa.ghana@absa.africa",
+      "type": "commercial",
+      "aliases": [
+        "absa ghana"
+      ]
+    },
+    {
+      "name": "Access Bank Ghana",
+      "code": "ABGHA",
+      "slug": "access-bank-ghana",
+      "short_name": "Access",
+      "website": "https://ghana.accessbankplc.com",
+      "support_email": "contactcentreghana@accessbankplc.com",
+      "type": "commercial",
+      "aliases": [
+        "access ghana"
+      ]
+    },
+    {
+      "name": "CalBank",
+      "code": "CAL",
+      "slug": "calbank",
+      "short_name": "CalBank",
+      "website": "https://calbank.net",
+      "support_email": "customercare@calbank.net",
+      "type": "commercial",
+      "aliases": [
+        "cal bank"
+      ]
+    },
+    {
+      "name": "Ecobank Ghana",
+      "code": "ECOG",
+      "slug": "ecobank-ghana",
+      "short_name": "Ecobank",
+      "website": "https://www.ecobank.com/gh/personal-banking",
+      "support_email": "ecobankgh@ecobank.com",
+      "type": "commercial",
+      "aliases": [
+        "ecobank ghana"
+      ]
+    },
+    {
+      "name": "GCB Bank",
+      "code": "GCB",
+      "slug": "gcb-bank",
+      "short_name": "GCB",
+      "website": "https://www.gcbbank.com.gh",
+      "support_email": "customerservice@gcbbank.com.gh",
+      "type": "commercial",
+      "aliases": [
+        "gcb"
+      ]
+    }
+  ]
+}

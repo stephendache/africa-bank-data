@@ -1,0 +1,10 @@
+{
+  "name": "africa-bank-data",
+  "version": "0.1.0",
+  "description": "Open dataset of African banks for developers.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  }
+}

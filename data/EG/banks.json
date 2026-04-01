@@ -1,0 +1,65 @@
+{
+  "country": "EG",
+  "banks": [
+    {
+      "name": "Banque Misr",
+      "code": "BMI",
+      "slug": "banque-misr",
+      "short_name": "Banque Misr",
+      "website": "https://www.banquemisr.com",
+      "support_email": "bm19888@banquemisr.com",
+      "type": "commercial",
+      "aliases": [
+        "banque misr"
+      ]
+    },
+    {
+      "name": "Commercial International Bank",
+      "code": "CIB",
+      "slug": "commercial-international-bank",
+      "short_name": "CIB",
+      "website": "https://www.cibeg.com",
+      "support_email": "customercare.unit@cibeg.com",
+      "type": "commercial",
+      "aliases": [
+        "cib"
+      ]
+    },
+    {
+      "name": "National Bank of Egypt",
+      "code": "NBE",
+      "slug": "national-bank-of-egypt",
+      "short_name": "NBE",
+      "website": "https://www.nbe.com.eg",
+      "support_email": "complaints@nbe.com.eg",
+      "type": "commercial",
+      "aliases": [
+        "nbe"
+      ]
+    },
+    {
+      "name": "QNB Alahli",
+      "code": "QNB",
+      "slug": "qnb-alahli",
+      "short_name": "QNB",
+      "website": "https://www.qnbalahli.com",
+      "support_email": "customerservice@qnbalahli.com",
+      "type": "commercial",
+      "aliases": [
+        "qnb alahli"
+      ]
+    },
+    {
+      "name": "The Arab African International Bank",
+      "code": "AAIB",
+      "slug": "the-arab-african-international-bank",
+      "short_name": "AAIB",
+      "website": "https://www.aaib.com",
+      "support_email": "customer.service@aaib.com",
+      "type": "commercial",
+      "aliases": [
+        "aaib"
+      ]
+    }
+  ]
+}

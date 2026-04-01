@@ -1,0 +1,10 @@
+{
+  "name": "africa-bank-data",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Open dataset of African banks for developers building fintech apps and payment systems.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.js"
+  }
+}
