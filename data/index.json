@@ -23,6 +23,22 @@
     {
       "code": "EG",
       "name": "Egypt"
+    },
+    {
+      "code": "CI",
+      "name": "Côte d'Ivoire"
+    },
+    {
+      "code": "SN",
+      "name": "Senegal"
+    },
+    {
+      "code": "BJ",
+      "name": "Benin"
+    },
+    {
+      "code": "TG",
+      "name": "Togo"
     }
   ]
 }

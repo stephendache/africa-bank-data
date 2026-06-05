@@ -1,0 +1,53 @@
+{
+  "country": "TG",
+  "banks": [
+    {
+      "name": "Ecobank Togo",
+      "code": "TG001",
+      "slug": "ecobank-togo",
+      "short_name": "Ecobank",
+      "website": "https://www.ecobank.com",
+      "type": "commercial"
+    },
+    {
+      "name": "Orabank Togo",
+      "code": "TG002",
+      "slug": "orabank-togo",
+      "short_name": "Orabank",
+      "website": "https://www.orabank.net",
+      "type": "commercial"
+    },
+    {
+      "name": "Bank of Africa Togo",
+      "code": "TG003",
+      "slug": "boa-togo",
+      "short_name": "BOA",
+      "website": "https://www.boafrance.com",
+      "type": "commercial"
+    },
+    {
+      "name": "Banque Atlantique Togo",
+      "code": "TG004",
+      "slug": "banque-atlantique-togo",
+      "short_name": "Banque Atlantique",
+      "website": "https://www.banqueatlantique.net",
+      "type": "commercial"
+    },
+    {
+      "name": "NSIA Banque Togo",
+      "code": "TG005",
+      "slug": "nsia-banque-togo",
+      "short_name": "NSIA",
+      "website": "https://www.nsiabanque.com",
+      "type": "commercial"
+    },
+    {
+      "name": "Coris Bank International Togo",
+      "code": "TG006",
+      "slug": "coris-bank-togo",
+      "short_name": "Coris",
+      "website": "https://www.coris.bank",
+      "type": "commercial"
+    }
+  ]
+}
