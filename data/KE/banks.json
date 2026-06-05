@@ -61,6 +61,81 @@
       "aliases": [
         "ncba"
       ]
+    },
+    {
+      "name": "Standard Chartered Bank Kenya",
+      "code": "02",
+      "slug": "standard-chartered-bank-kenya",
+      "short_name": "Standard Chartered",
+      "website": "https://www.sc.com/ke",
+      "support_email": "customercare.ke@sc.com",
+      "type": "commercial",
+      "aliases": [
+        "standard chartered"
+      ]
+    },
+    {
+      "name": "Stanbic Bank Kenya",
+      "code": "10",
+      "slug": "stanbic-bank-kenya",
+      "short_name": "Stanbic",
+      "website": "https://www.stanbicbank.co.ke",
+      "support_email": "customerservice@stsb.co.ke",
+      "type": "commercial",
+      "aliases": [
+        "stanbic"
+      ]
+    },
+    {
+      "name": "I&M Bank Kenya",
+      "code": "69",
+      "slug": "im-bank-kenya",
+      "short_name": "I&M",
+      "website": "https://ke.imwealth.co.ke",
+      "support_email": "contact@imbankgroup.com",
+      "type": "commercial",
+      "aliases": [
+        "i&m",
+        "im bank"
+      ]
+    },
+    {
+      "name": "Diamond Trust Bank Kenya",
+      "code": "72",
+      "slug": "diamond-trust-bank-kenya",
+      "short_name": "DTB",
+      "website": "https://ke.dtbafrica.com",
+      "support_email": "customerservice@dtbafrica.com",
+      "type": "commercial",
+      "aliases": [
+        "dtb",
+        "diamond trust bank"
+      ]
+    },
+    {
+      "name": "Family Bank",
+      "code": "22",
+      "slug": "family-bank",
+      "short_name": "Family Bank",
+      "website": "https://familybank.co.ke",
+      "support_email": "contactcenter@familybank.co.ke",
+      "type": "commercial",
+      "aliases": [
+        "family"
+      ]
+    },
+    {
+      "name": "Bank of Africa Kenya",
+      "code": "55",
+      "slug": "bank-of-africa-kenya",
+      "short_name": "BOA Kenya",
+      "website": "https://www.boakenya.com",
+      "support_email": "info@boakenya.com",
+      "type": "commercial",
+      "aliases": [
+        "boa kenya",
+        "bank of africa"
+      ]
     }
   ]
 }
