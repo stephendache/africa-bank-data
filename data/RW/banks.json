@@ -1,4 +1,5 @@
 {
+  "$schema": "../../schema/banks-file.schema.json",
   "country": "RW",
   "banks": [
     {

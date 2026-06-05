@@ -5,6 +5,12 @@
   "description": "Open dataset of African banks for developers building fintech apps and payment systems.",
   "type": "module",
   "scripts": {
-    "validate": "node scripts/validate-data.js"
+    "validate": "node scripts/validate-data.js",
+    "codegen": "json2ts schema/bank.schema.json > api/src/types.d.ts && json2ts schema/metadata.schema.json >> api/src/types.d.ts"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "json-schema-to-typescript": "^15.0.3"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/jessemurah/africa-bank-data/schema/banks-file.schema.json",
+  "title": "BanksFile",
+  "description": "The structure of a data/<COUNTRY>/banks.json file",
+  "type": "object",
+  "required": ["country", "banks"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code matching the parent directory"
+    },
+    "banks": {
+      "type": "array",
+      "items": { "$ref": "./bank.schema.json" },
+      "description": "List of bank records for this country"
+    }
+  }
+}

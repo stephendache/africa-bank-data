@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/jessemurah/africa-bank-data/schema/metadata.schema.json",
+  "title": "CountryMetadata",
+  "description": "Country-level metadata for a supported country in the Africa Bank Data dataset",
+  "type": "object",
+  "required": ["country", "country_name", "currency", "central_bank", "last_updated"],
+  "additionalProperties": false,
+  "properties": {
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code"
+    },
+    "country_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full English name of the country"
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 4217 currency code (e.g. NGN, KES)"
+    },
+    "central_bank": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Name of the country's central bank"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the data was last reviewed (YYYY-MM-DD)"
+    }
+  }
+}
