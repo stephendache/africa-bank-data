@@ -1,0 +1,53 @@
+{
+  "country": "SN",
+  "banks": [
+    {
+      "name": "CBAO Groupe Attijariwafa Bank",
+      "code": "SN001",
+      "slug": "cbao",
+      "short_name": "CBAO",
+      "website": "https://www.cbao.sn",
+      "type": "commercial"
+    },
+    {
+      "name": "Ecobank Sénégal",
+      "code": "SN002",
+      "slug": "ecobank-senegal",
+      "short_name": "Ecobank",
+      "website": "https://www.ecobank.com",
+      "type": "commercial"
+    },
+    {
+      "name": "UBA Sénégal",
+      "code": "SN003",
+      "slug": "uba-senegal",
+      "short_name": "UBA",
+      "website": "https://www.ubagroup.com",
+      "type": "commercial"
+    },
+    {
+      "name": "Société Générale Sénégal",
+      "code": "SN004",
+      "slug": "societe-generale-senegal",
+      "short_name": "SG Sénégal",
+      "website": "https://africa.societegenerale.com",
+      "type": "commercial"
+    },
+    {
+      "name": "Banque Atlantique Sénégal",
+      "code": "SN005",
+      "slug": "banque-atlantique-senegal",
+      "short_name": "Banque Atlantique",
+      "website": "https://www.banqueatlantique.net",
+      "type": "commercial"
+    },
+    {
+      "name": "Orabank Sénégal",
+      "code": "SN006",
+      "slug": "orabank-senegal",
+      "short_name": "Orabank",
+      "website": "https://www.orabank.net",
+      "type": "commercial"
+    }
+  ]
+}

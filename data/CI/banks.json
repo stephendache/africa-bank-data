@@ -1,0 +1,59 @@
+{
+  "country": "CI",
+  "banks": [
+    {
+      "name": "Ecobank Côte d'Ivoire",
+      "code": "CI001",
+      "slug": "ecobank-cote-divoire",
+      "short_name": "Ecobank",
+      "website": "https://www.ecobank.com",
+      "type": "commercial",
+      "aliases": ["ecobank ci"]
+    },
+    {
+      "name": "NSIA Banque Côte d'Ivoire",
+      "code": "CI002",
+      "slug": "nsia-banque",
+      "short_name": "NSIA",
+      "website": "https://www.nsiabanque.ci",
+      "type": "commercial",
+      "aliases": ["nsia"]
+    },
+    {
+      "name": "Banque Atlantique Côte d'Ivoire",
+      "code": "CI003",
+      "slug": "banque-atlantique",
+      "short_name": "Banque Atlantique",
+      "website": "https://www.banqueatlantique.net",
+      "type": "commercial",
+      "aliases": ["atlantique"]
+    },
+    {
+      "name": "Société Générale Côte d'Ivoire",
+      "code": "CI004",
+      "slug": "societe-generale-ci",
+      "short_name": "SGCI",
+      "website": "https://www.sgci.ci",
+      "type": "commercial",
+      "aliases": ["sgci"]
+    },
+    {
+      "name": "Bridge Bank Group",
+      "code": "CI005",
+      "slug": "bridge-bank",
+      "short_name": "Bridge Bank",
+      "website": "https://www.bridgebankgroup.com",
+      "type": "commercial",
+      "aliases": ["bbg"]
+    },
+    {
+      "name": "Bank of Africa Côte d'Ivoire",
+      "code": "CI006",
+      "slug": "boa-cote-divoire",
+      "short_name": "BOA",
+      "website": "https://www.boacoteivoire.com",
+      "type": "commercial",
+      "aliases": ["boa"]
+    }
+  ]
+}

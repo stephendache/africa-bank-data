@@ -136,6 +136,189 @@
       "aliases": [
         "zenith"
       ]
+    },
+    {
+      "name": "First City Monument Bank",
+      "code": "214",
+      "slug": "fcmb",
+      "short_name": "FCMB",
+      "ussd": "*329#",
+      "website": "https://www.fcmb.com",
+      "support_email": "customerservice@fcmb.com",
+      "type": "commercial",
+      "aliases": [
+        "fcmb",
+        "first city monument bank"
+      ]
+    },
+    {
+      "name": "Union Bank of Nigeria",
+      "code": "032",
+      "slug": "union-bank",
+      "short_name": "Union Bank",
+      "ussd": "*826#",
+      "website": "https://www.unionbankng.com",
+      "support_email": "customerservice@unionbankng.com",
+      "type": "commercial",
+      "aliases": [
+        "union bank"
+      ]
+    },
+    {
+      "name": "Polaris Bank",
+      "code": "076",
+      "slug": "polaris-bank",
+      "short_name": "Polaris",
+      "ussd": "*833#",
+      "website": "https://www.polarisbanklimited.com",
+      "support_email": "yescenter@polarisbanklimited.com",
+      "type": "commercial",
+      "aliases": [
+        "polaris"
+      ]
+    },
+    {
+      "name": "Keystone Bank",
+      "code": "082",
+      "slug": "keystone-bank",
+      "short_name": "Keystone",
+      "ussd": "*7111#",
+      "website": "https://www.keystonebankng.com",
+      "support_email": "contactcentre@keystonebankng.com",
+      "type": "commercial",
+      "aliases": [
+        "keystone"
+      ]
+    },
+    {
+      "name": "Unity Bank",
+      "code": "215",
+      "slug": "unity-bank",
+      "short_name": "Unity",
+      "ussd": "*7799#",
+      "website": "https://www.unitybankng.com",
+      "support_email": "we_care@unitybankng.com",
+      "type": "commercial",
+      "aliases": [
+        "unity"
+      ]
+    },
+    {
+      "name": "Providus Bank",
+      "code": "101",
+      "slug": "providus-bank",
+      "short_name": "Providus",
+      "ussd": "*770#",
+      "website": "https://providusbank.com",
+      "support_email": "contact@providusbank.com",
+      "type": "commercial",
+      "aliases": [
+        "providus"
+      ]
+    },
+    {
+      "name": "Titan Trust Bank",
+      "code": "102",
+      "slug": "titan-trust-bank",
+      "short_name": "Titan Trust",
+      "ussd": "*922#",
+      "website": "https://titantrustbank.com",
+      "support_email": "contactcenter@titantrustbank.com",
+      "type": "commercial",
+      "aliases": [
+        "ttb",
+        "titan"
+      ]
+    },
+    {
+      "name": "Premium Trust Bank",
+      "code": "105",
+      "slug": "premium-trust-bank",
+      "short_name": "Premium Trust",
+      "ussd": "*866#",
+      "website": "https://www.premiumtrustbank.com",
+      "support_email": "customercare@premiumtrustbank.com",
+      "type": "commercial",
+      "aliases": [
+        "premium trust"
+      ]
+    },
+    {
+      "name": "Optimus Bank",
+      "code": "107",
+      "slug": "optimus-bank",
+      "short_name": "Optimus",
+      "ussd": "*909#",
+      "website": "https://optimusbank.com",
+      "support_email": "contact@optimusbank.com",
+      "type": "commercial",
+      "aliases": [
+        "optimus"
+      ]
+    },
+    {
+      "name": "Globus Bank",
+      "code": "103",
+      "slug": "globus-bank",
+      "short_name": "Globus",
+      "ussd": "*989#",
+      "website": "https://globusbank.com",
+      "support_email": "customercare@globusbank.com",
+      "type": "commercial",
+      "aliases": [
+        "globus"
+      ]
+    },
+    {
+      "name": "Parallex Bank",
+      "code": "104",
+      "slug": "parallex-bank",
+      "short_name": "Parallex",
+      "ussd": "*322#",
+      "website": "https://parallexbank.com",
+      "support_email": "customercare@parallexbank.com",
+      "type": "commercial",
+      "aliases": [
+        "parallex"
+      ]
+    },
+    {
+      "name": "SunTrust Bank",
+      "code": "100",
+      "slug": "suntrust-bank",
+      "short_name": "SunTrust",
+      "website": "https://suntrustng.com",
+      "support_email": "customerservice@suntrustng.com",
+      "type": "commercial",
+      "aliases": [
+        "suntrust"
+      ]
+    },
+    {
+      "name": "Standard Chartered Bank Nigeria",
+      "code": "068",
+      "slug": "standard-chartered-nigeria",
+      "short_name": "Standard Chartered",
+      "website": "https://www.sc.com/ng",
+      "support_email": "clientcare.ng@sc.com",
+      "type": "commercial",
+      "aliases": [
+        "scb",
+        "standard chartered"
+      ]
+    },
+    {
+      "name": "Citibank Nigeria",
+      "code": "023",
+      "slug": "citibank-nigeria",
+      "short_name": "Citibank",
+      "website": "https://www.citigroup.com",
+      "support_email": "clientservicesnigeria@citi.com",
+      "type": "commercial",
+      "aliases": [
+        "citi",
+        "citibank"
+      ]
     }
   ]
 }
