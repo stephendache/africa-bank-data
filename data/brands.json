@@ -1,0 +1,149 @@
+{
+  "brands": [
+    {
+      "slug": "aaib",
+      "name": "Arab African International Bank",
+      "domain": "aaib.com"
+    },
+    {
+      "slug": "absa",
+      "name": "Absa",
+      "domain": "absa.africa"
+    },
+    {
+      "slug": "access-bank",
+      "name": "Access Bank",
+      "domain": "accessbankplc.com"
+    },
+    {
+      "slug": "bank-of-kigali",
+      "name": "Bank of Kigali",
+      "domain": "bk.rw"
+    },
+    {
+      "slug": "banque-misr",
+      "name": "Banque Misr",
+      "domain": "banquemisr.com"
+    },
+    {
+      "slug": "calbank",
+      "name": "CalBank",
+      "domain": "calbank.net"
+    },
+    {
+      "slug": "capitec",
+      "name": "Capitec Bank",
+      "domain": "capitecbank.co.za"
+    },
+    {
+      "slug": "cib",
+      "name": "Commercial International Bank",
+      "domain": "cibeg.com"
+    },
+    {
+      "slug": "coop-bank",
+      "name": "Co-operative Bank of Kenya",
+      "domain": "co-opbank.co.ke"
+    },
+    {
+      "slug": "ecobank",
+      "name": "Ecobank",
+      "domain": "ecobank.com"
+    },
+    {
+      "slug": "equity-bank",
+      "name": "Equity Bank",
+      "domain": "equitygroupholdings.com"
+    },
+    {
+      "slug": "fidelity-bank",
+      "name": "Fidelity Bank",
+      "domain": "fidelitybank.ng"
+    },
+    {
+      "slug": "first-bank",
+      "name": "First Bank of Nigeria",
+      "domain": "firstbanknigeria.com"
+    },
+    {
+      "slug": "fnb",
+      "name": "First National Bank",
+      "domain": "fnb.co.za"
+    },
+    {
+      "slug": "gcb-bank",
+      "name": "GCB Bank",
+      "domain": "gcbbank.com.gh"
+    },
+    {
+      "slug": "gtbank",
+      "name": "Guaranty Trust Bank",
+      "domain": "gtbank.com"
+    },
+    {
+      "slug": "im-bank",
+      "name": "I&M Bank",
+      "domain": "imbank.com"
+    },
+    {
+      "slug": "kcb",
+      "name": "KCB Bank",
+      "domain": "kcbgroup.com"
+    },
+    {
+      "slug": "ncba",
+      "name": "NCBA Bank",
+      "domain": "ncbagroup.com"
+    },
+    {
+      "slug": "nbe",
+      "name": "National Bank of Egypt",
+      "domain": "nbe.com.eg"
+    },
+    {
+      "slug": "nedbank",
+      "name": "Nedbank",
+      "domain": "nedbank.co.za"
+    },
+    {
+      "slug": "qnb",
+      "name": "QNB",
+      "domain": "qnb.com"
+    },
+    {
+      "slug": "stanbic-ibtc",
+      "name": "Stanbic IBTC Bank",
+      "domain": "stanbicibtc.com"
+    },
+    {
+      "slug": "standard-bank",
+      "name": "Standard Bank",
+      "domain": "standardbank.co.za"
+    },
+    {
+      "slug": "sterling-bank",
+      "name": "Sterling Bank",
+      "domain": "sterling.ng"
+    },
+    {
+      "slug": "uba",
+      "name": "United Bank for Africa",
+      "domain": "ubagroup.com"
+    },
+    {
+      "slug": "urwego-bank",
+      "name": "Urwego Bank",
+      "domain": "urwegobank.com"
+    },
+    {
+      "slug": "wema-bank",
+      "name": "Wema Bank",
+      "domain": "wemabank.com"
+    },
+    {
+      "slug": "zenith-bank",
+      "name": "Zenith Bank",
+      "domain": "zenithbank.com"
+    }
+  ]
+}

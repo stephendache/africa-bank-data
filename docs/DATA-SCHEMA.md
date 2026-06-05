@@ -37,11 +37,34 @@
 }
 ```
 
+## Brand registry
+
+`data/brands.json`
+
+```json
+{
+  "brands": [
+    {
+      "slug": "ecobank",
+      "name": "Ecobank",
+      "domain": "ecobank.com"
+    }
+  ]
+}
+```
+
+Brand fields:
+
+- `slug`: string, required
+- `name`: string, required
+- `domain`: string, required — used to build Brandfetch logo URLs at runtime
+
 ## Bank fields
 
 - `name`: string, required
 - `code`: string, required
 - `slug`: string, required
+- `brand_slug`: string, optional — links to a shared brand in `data/brands.json`
 - `short_name`: string, optional
 - `ussd`: string, optional
 - `website`: string, optional
