@@ -48,3 +48,18 @@
 - `support_email`: string, optional
 - `type`: string, optional
 - `aliases`: string[], optional
+
+## Bank logos
+
+Optional logos may be added under `logos/<country-code>/`.
+Use the bank slug for the filename, for example:
+
+
+```json
+{
+  "logos": [
+    "logos/GH/absa-bank-ghana.png",
+    "logos/GH/standard-chartered-bank-ghana.svg"
+  ]
+}
+```
