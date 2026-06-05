@@ -10,7 +10,8 @@
       "support_email": "absa.ghana@absa.africa",
       "type": "commercial",
       "aliases": [
-        "absa ghana"
+        "absa ghana",
+        "absa bank ghana limited"
       ]
     },
     {
@@ -22,7 +23,36 @@
       "support_email": "contactcentreghana@accessbankplc.com",
       "type": "commercial",
       "aliases": [
-        "access ghana"
+        "access ghana",
+        "access bank ghana plc"
+      ]
+    },
+    {
+      "name": "Agricultural Development Bank",
+      "code": "ADB",
+      "slug": "agricultural-development-bank",
+      "short_name": "ADB",
+      "website": "https://www.agricbank.com",
+      "support_email": "customercare@agricbank.com",
+      "type": "commercial",
+      "aliases": [
+        "adb bank",
+        "adb ghana",
+        "agric bank",
+        "agricultural development bank plc"
+      ]
+    },
+    {
+      "name": "Bank of Africa Ghana",
+      "code": "BOA",
+      "slug": "bank-of-africa-ghana",
+      "short_name": "BOA",
+      "website": "https://www.boaghana.com",
+      "support_email": "info@boaghana.com",
+      "type": "commercial",
+      "aliases": [
+        "boa ghana",
+        "bank of africa ghana limited"
       ]
     },
     {
@@ -34,7 +64,21 @@
       "support_email": "customercare@calbank.net",
       "type": "commercial",
       "aliases": [
-        "cal bank"
+        "cal bank",
+        "calbank plc"
+      ]
+    },
+    {
+      "name": "Consolidated Bank Ghana",
+      "code": "CBG",
+      "slug": "consolidated-bank-ghana",
+      "short_name": "CBG",
+      "website": "https://www.cbg.com.gh",
+      "support_email": "customerservice@cbg.com.gh",
+      "type": "commercial",
+      "aliases": [
+        "cbg",
+        "consolidated bank ghana limited"
       ]
     },
     {
@@ -46,7 +90,75 @@
       "support_email": "ecobankgh@ecobank.com",
       "type": "commercial",
       "aliases": [
-        "ecobank ghana"
+        "ecobank ghana",
+        "ecobank ghana plc"
+      ]
+    },
+    {
+      "name": "FBNBank Ghana",
+      "code": "FBN",
+      "slug": "fbnbank-ghana",
+      "short_name": "FBNBank",
+      "website": "https://www.fbnbankghana.com",
+      "support_email": "contactus@fbnbankghana.com",
+      "type": "commercial",
+      "aliases": [
+        "first bank nigeria ghana",
+        "fbn ghana",
+        "fbnbank ghana limited"
+      ]
+    },
+    {
+      "name": "Fidelity Bank Ghana",
+      "code": "FID",
+      "slug": "fidelity-bank-ghana",
+      "short_name": "Fidelity",
+      "website": "https://fidelitybank.com.gh",
+      "support_email": "info@fidelitybank.com.gh",
+      "type": "commercial",
+      "aliases": [
+        "fidelity bank",
+        "fidelity bank ghana limited"
+      ]
+    },
+    {
+      "name": "First Atlantic Bank",
+      "code": "FAB",
+      "slug": "first-atlantic-bank",
+      "short_name": "FirstAtlantic",
+      "website": "https://www.firstatlanticbank.com.gh",
+      "support_email": "info@firstatlanticbank.com.gh",
+      "type": "commercial",
+      "aliases": [
+        "first atlantic",
+        "fab ghana",
+        "first atlantic bank limited"
+      ]
+    },
+    {
+      "name": "First Bank Ghana",
+      "code": "FBG",
+      "slug": "first-bank-ghana",
+      "short_name": "FirstBank",
+      "website": "https://www.firstbankghana.com",
+      "support_email": "customerservice@firstbankghana.com",
+      "type": "commercial",
+      "aliases": [
+        "first bank ghana ltd"
+      ]
+    },
+    {
+      "name": "First National Bank Ghana",
+      "code": "FNB",
+      "slug": "first-national-bank-ghana",
+      "short_name": "FNB",
+      "website": "https://www.fnbghana.com",
+      "support_email": "customercare@fnbghana.com",
+      "type": "commercial",
+      "aliases": [
+        "fnb ghana",
+        "first national bank ghana limited",
+        "firstrand ghana"
       ]
     },
     {
@@ -58,7 +170,163 @@
       "support_email": "customerservice@gcbbank.com.gh",
       "type": "commercial",
       "aliases": [
-        "gcb"
+        "gcb",
+        "gcb bank plc",
+        "ghana commercial bank"
+      ]
+    },
+    {
+      "name": "Guaranty Trust Bank Ghana",
+      "code": "GTB",
+      "slug": "guaranty-trust-bank-ghana",
+      "short_name": "GTBank",
+      "website": "https://www.gtbghana.com",
+      "support_email": "gh.customersupport@gtbank.com",
+      "type": "commercial",
+      "aliases": [
+        "gtb ghana",
+        "gt bank ghana",
+        "gtco ghana",
+        "guaranty trust bank ghana limited"
+      ]
+    },
+    {
+      "name": "National Investment Bank",
+      "code": "NIB",
+      "slug": "national-investment-bank",
+      "short_name": "NIB",
+      "website": "https://www.nibghana.com",
+      "support_email": "info@nibghana.com",
+      "type": "commercial",
+      "aliases": [
+        "nib",
+        "nib bank",
+        "national investment bank limited",
+        "national investment bank plc"
+      ]
+    },
+    {
+      "name": "OmniBSIC Bank Ghana",
+      "code": "OMNIBSIC",
+      "slug": "omnibsic-bank-ghana",
+      "short_name": "OmniBSIC",
+      "website": "https://www.omnibsicbank.com",
+      "support_email": "info@omnibsicbank.com",
+      "type": "commercial",
+      "aliases": [
+        "omni bsic",
+        "bsic ghana",
+        "omnibsic bank ghana limited"
+      ]
+    },
+    {
+      "name": "Prudential Bank Ghana",
+      "code": "PBL",
+      "slug": "prudential-bank-ghana",
+      "short_name": "Prudential",
+      "website": "https://www.prudentialbank.com.gh",
+      "support_email": "info@prudentialbank.com.gh",
+      "type": "commercial",
+      "aliases": [
+        "prudential bank",
+        "prudential bank limited"
+      ]
+    },
+    {
+      "name": "Republic Bank Ghana",
+      "code": "RBG",
+      "slug": "republic-bank-ghana",
+      "short_name": "Republic",
+      "website": "https://www.republicbankghana.com",
+      "support_email": "customercare@republicbankghana.com",
+      "type": "commercial",
+      "aliases": [
+        "republic bank",
+        "hfc bank",
+        "republic bank ghana plc"
+      ]
+    },
+    {
+      "name": "Société Générale Ghana",
+      "code": "SGG",
+      "slug": "societe-generale-ghana",
+      "short_name": "SocGen",
+      "website": "https://www.societegenerale.com.gh",
+      "support_email": "ghclientservice@socgen.com",
+      "type": "commercial",
+      "aliases": [
+        "sg ghana",
+        "societe generale",
+        "societe generale ghana plc"
+      ]
+    },
+    {
+      "name": "Stanbic Bank Ghana",
+      "code": "STANBIC",
+      "slug": "stanbic-bank-ghana",
+      "short_name": "Stanbic",
+      "website": "https://www.stanbicbank.com.gh",
+      "support_email": "customercare@stanbicbank.com.gh",
+      "type": "commercial",
+      "aliases": [
+        "stanbic ghana",
+        "standard bank ghana",
+        "stanbic bank ghana limited"
+      ]
+    },
+    {
+      "name": "Standard Chartered Bank Ghana",
+      "code": "SCB",
+      "slug": "standard-chartered-bank-ghana",
+      "short_name": "StanChart",
+      "website": "https://www.sc.com/gh",
+      "support_email": "ghana.enquiry@sc.com",
+      "type": "commercial",
+      "aliases": [
+        "standard chartered ghana",
+        "stanchart ghana",
+        "standard chartered bank ghana plc"
+      ]
+    },
+    {
+      "name": "United Bank for Africa Ghana",
+      "code": "UBA",
+      "slug": "uba-ghana",
+      "short_name": "UBA",
+      "website": "https://www.ubaghana.com",
+      "support_email": "cfc@ubagroup.com",
+      "type": "commercial",
+      "aliases": [
+        "uba ghana",
+        "united bank for africa",
+        "united bank for africa ghana limited"
+      ]
+    },
+    {
+      "name": "Universal Merchant Bank Ghana",
+      "code": "UMB",
+      "slug": "universal-merchant-bank-ghana",
+      "short_name": "UMB",
+      "website": "https://www.myumbbank.com",
+      "support_email": "info@myumbbank.com",
+      "type": "commercial",
+      "aliases": [
+        "umb",
+        "merchant bank ghana",
+        "universal merchant bank ltd"
+      ]
+    },
+    {
+      "name": "Zenith Bank Ghana",
+      "code": "ZBG",
+      "slug": "zenith-bank-ghana",
+      "short_name": "Zenith",
+      "website": "https://www.zenithbank.com.gh",
+      "support_email": "info@zenithbank.com.gh",
+      "type": "commercial",
+      "aliases": [
+        "zenith ghana",
+        "zenith bank ghana limited"
       ]
     }
   ]
