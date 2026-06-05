@@ -20,7 +20,7 @@ You can contribute by:
 * Updating existing bank information
 * Fixing incorrect bank codes
 * Adding `ussd`, `website`, and `support_email` - where available
-* Adding bank logos
+* Adding or updating brand entries for logo support
 * improving validation scripts
 * Reporting data errors
 * Building SDKs or APIs using the dataset
@@ -37,6 +37,7 @@ africa-bank-data/
 │
 ├── data/
 │   ├── index.json
+│   ├── brands.json
 │   ├── NG/
 │   │   ├── banks.json
 │   │   └── metadata.json
@@ -46,11 +47,6 @@ africa-bank-data/
 │   └── GH/
 │       ├── banks.json
 │       └── metadata.json
-│
-├── logos/
-│   ├── NG/
-│   ├── KE/
-│   └── GH/
 │
 ├── packages/
 │   ├── js-sdk/
@@ -107,11 +103,28 @@ Each dataset must follow this format:
 
 ### Optional Fields
 
-| Field    | Description            |
-| -------- | ---------------------- |
-| ussd     | USSD banking code      |
-| nip_code | NIP institution code   |
-| aliases  | Alternative bank names |
+| Field       | Description                                      |
+| ----------- | ------------------------------------------------ |
+| brand_slug  | Shared brand identifier from `data/brands.json`    |
+| ussd        | USSD banking code                                |
+| nip_code    | NIP institution code                             |
+| aliases     | Alternative bank names                           |
+
+### Brand and logo fields
+
+Banks that share a corporate identity across countries should use the same `brand_slug` and point to a single entry in `data/brands.json`. Logo URLs are built at runtime from the brand `domain` using Brandfetch.
+
+Example:
+
+```json
+{
+  "name": "Ecobank Ghana",
+  "slug": "ecobank-ghana",
+  "brand_slug": "ecobank"
+}
+```
+
+Do not commit Brandfetch client IDs to the repository. See [docs/LOGOS.md](./docs/LOGOS.md) for the full guide.
 
 ---
 
@@ -254,7 +267,7 @@ If you're new to open source, try these:
 * fix incorrect slugs
 * add missing USSD codes
 * improve documentation
-* add logos
+* add brand entries in `data/brands.json`
 
 Look for issues labeled:
 
