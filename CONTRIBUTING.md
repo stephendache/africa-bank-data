@@ -53,8 +53,7 @@ africa-bank-data/
 │   └── GH/
 │
 ├── packages/
-│   ├── js-sdk/
-│   └── python-sdk/
+│   └── js-sdk/
 │
 ├── api/
 │   └── src/
@@ -67,21 +66,22 @@ africa-bank-data/
 
 All country datasets live inside the **`data/` directory**.
 
-Each country uses the **ISO 3166-1 alpha-2 country code** as the filename.
+Each country has its own folder named with the **ISO 3166-1 alpha-2 country code**. Each folder contains a `banks.json` file (the bank records) and a `metadata.json` file (country details). The list of supported countries is tracked in `data/index.json`.
 
 Example:
 
 ```
-data/NG.json
-data/KE.json
-data/GH.json
+data/NG/banks.json
+data/NG/metadata.json
+data/KE/banks.json
+data/KE/metadata.json
 ```
 
 ---
 
 # Dataset Format
 
-Each dataset must follow this format:
+Each `data/<country-code>/banks.json` file must follow this format:
 
 ```json
 {
@@ -97,6 +97,8 @@ Each dataset must follow this format:
 }
 ```
 
+The `country` value must match the folder's country code.
+
 ### Required Fields
 
 | Field | Description                 |
@@ -107,33 +109,41 @@ Each dataset must follow this format:
 
 ### Optional Fields
 
-| Field    | Description            |
-| -------- | ---------------------- |
-| ussd     | USSD banking code      |
-| nip_code | NIP institution code   |
-| aliases  | Alternative bank names |
+| Field         | Description                              |
+| ------------- | ---------------------------------------- |
+| short_name    | Short display name                       |
+| ussd          | USSD banking code                        |
+| website       | Official institution website            |
+| support_email | Public support email                     |
+| type          | Institution type, e.g. `commercial`      |
+| aliases       | Alternative names or search aliases      |
 
 ---
 
 # Adding a New Country
 
-1️⃣ Create a new file in `data/` using the **ISO country code**.
+1️⃣ Create a new folder in `data/` named with the **ISO country code**, and add a `banks.json` and a `metadata.json` file inside it.
 
 Example:
 
 ```
-data/KE.json
+data/KE/banks.json
+data/KE/metadata.json
 ```
 
-2️⃣ Add the banks using the standard format.
+2️⃣ Add the banks to `banks.json` using the standard format, and fill in `metadata.json`.
 
-3️⃣ Verify that:
+3️⃣ Add the country to `data/index.json`.
+
+4️⃣ Verify that:
 
 * bank names are correct
 * bank codes are accurate
 * slugs are unique
 
-4️⃣ Submit a Pull Request.
+5️⃣ Run `node scripts/validate-data.js` and make sure it passes.
+
+6️⃣ Submit a Pull Request.
 
 ---
 
@@ -144,7 +154,7 @@ data/KE.json
 Example:
 
 ```
-data/NG.json
+data/NG/banks.json
 ```
 
 2️⃣ Add the bank inside the `banks` array.
