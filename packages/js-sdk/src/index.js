@@ -5,12 +5,14 @@ import { fileURLToPath } from "node:url";
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(currentDir, "../../../data");
 
+function readJson(...segments) {
+  return JSON.parse(fs.readFileSync(path.join(root, ...segments), "utf8"));
+}
+
 export function getSupportedCountries() {
-  const file = path.join(root, "index.json");
-  return JSON.parse(fs.readFileSync(file, "utf8")).countries;
+  return readJson("index.json").countries;
 }
 
 export function getBanksByCountry(countryCode) {
-  const file = path.join(root, countryCode.toUpperCase(), "banks.json");
-  return JSON.parse(fs.readFileSync(file, "utf8")).banks;
+  return readJson(countryCode.toUpperCase(), "banks.json").banks;
 }
