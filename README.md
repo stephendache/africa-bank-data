@@ -28,6 +28,7 @@ Most teams rebuild this privately. This project exists to make that dataset open
 - country-based datasets in `data/<country-code>/banks.json`
 - country metadata in `data/<country-code>/metadata.json`
 - a top-level country index in `data/index.json`
+- a shared brand registry in `data/brands.json` for cross-country logo lookup
 - starter JS SDK in `packages/js-sdk`
 - starter API in `api/`
 - validation scripts in `scripts/`
@@ -50,9 +51,9 @@ africa-bank-data/
 │   ├── NG/
 │   ├── RW/
 │   ├── ZA/
+│   ├── brands.json
 │   └── index.json
 ├── docs/
-├── logos/
 ├── packages/
 │   └── js-sdk/
 ├── scripts/
@@ -67,6 +68,9 @@ africa-bank-data/
 ### `data/index.json`
 Contains the list of supported countries.
 
+### `data/brands.json`
+Contains shared brand identities used across countries. Each brand has a canonical domain for logo lookup.
+
 ### `data/<country-code>/metadata.json`
 Contains basic information about the country dataset.
 
@@ -80,6 +84,7 @@ Each bank object may contain the following fields:
 - `name` — official institution name
 - `code` — bank or institution code used locally
 - `slug` — URL-friendly identifier
+- `brand_slug` — shared brand identifier for cross-country logo lookup
 - `short_name` — short display name
 - `ussd` — USSD code when available
 - `website` — official website
@@ -94,6 +99,7 @@ Example:
   "name": "Access Bank",
   "code": "044",
   "slug": "access-bank",
+  "brand_slug": "access-bank",
   "short_name": "Access",
   "ussd": "*901#",
   "website": "https://www.accessbankplc.com",
@@ -143,6 +149,21 @@ npm install
 node -e "import('./src/index.js').then(m => console.log(m.getBanksByCountry('NG').slice(0,2)))"
 ```
 
+### Use bank logos
+
+The dataset stores brand domains only. Resolve logos at runtime with Brandfetch:
+
+```bash
+# API: set BRANDFETCH_CLIENT_ID in api/.env, then:
+cd api && npm start
+
+# SDK: pass your own client ID
+cd packages/js-sdk
+BRANDFETCH_CLIENT_ID=your-client-id node -e "import('./src/index.js').then(m => console.log(m.getBanksByCountryWithLogos('NG').slice(0,1)))"
+```
+
+Your client ID stays in environment variables, not in the repository. See [docs/LOGOS.md](./docs/LOGOS.md).
+
 ## How to contribute
 
 The contribution guide is in [CONTRIBUTING.md](./CONTRIBUTING.md). It covers:
@@ -179,7 +200,7 @@ Before submitting changes, please make sure:
 
 - expand country coverage
 - add more verified institutions per country
-- add logos with a standard naming convention
+- add or update brand entries in `data/brands.json`
 - improve validation scripts
 - publish an npm package
 - host a public read-only API
