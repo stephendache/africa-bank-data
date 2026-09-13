@@ -49,8 +49,7 @@ africa-bank-data/
 │       └── metadata.json
 │
 ├── packages/
-│   ├── js-sdk/
-│   └── python-sdk/
+│   └── js-sdk/
 │
 ├── api/
 │   └── src/
@@ -63,11 +62,16 @@ africa-bank-data/
 
 All country datasets live inside the **`data/` directory**.
 
+Each country has its own folder named with the **ISO 3166-1 alpha-2 country code**. Each folder contains a `banks.json` file (the bank records) and a `metadata.json` file (country details). The list of supported countries is tracked in `data/index.json`.
 Each country uses the **ISO 3166-1 alpha-2 country code** as its folder name.
 
 Example:
 
 ```
+data/NG/banks.json
+data/NG/metadata.json
+data/KE/banks.json
+data/KE/metadata.json
 data/NG/
 data/KE/
 data/GH/
@@ -92,6 +96,7 @@ data/UG/
 └── metadata.json
 ```
 
+Each `data/<country-code>/banks.json` file must follow this format:
 ## `metadata.json` format
 
 ```json
@@ -124,6 +129,7 @@ data/UG/
 }
 ```
 
+The `country` value must match the folder's country code.
 ## Rules for data contributions
 
 ### Required Fields
@@ -136,6 +142,41 @@ data/UG/
 
 ### Optional Fields
 
+| Field         | Description                              |
+| ------------- | ---------------------------------------- |
+| short_name    | Short display name                       |
+| ussd          | USSD banking code                        |
+| website       | Official institution website            |
+| support_email | Public support email                     |
+| type          | Institution type, e.g. `commercial`      |
+| aliases       | Alternative names or search aliases      |
+
+---
+
+# Adding a New Country
+
+1️⃣ Create a new folder in `data/` named with the **ISO country code**, and add a `banks.json` and a `metadata.json` file inside it.
+
+Example:
+
+```
+data/KE/banks.json
+data/KE/metadata.json
+```
+
+2️⃣ Add the banks to `banks.json` using the standard format, and fill in `metadata.json`.
+
+3️⃣ Add the country to `data/index.json`.
+
+4️⃣ Verify that:
+
+* bank names are correct
+* bank codes are accurate
+* slugs are unique
+
+5️⃣ Run `node scripts/validate-data.js` and make sure it passes.
+
+6️⃣ Submit a Pull Request.
 | Field       | Description                                      |
 | ----------- | ------------------------------------------------ |
 | brand_slug  | Shared brand identifier from `data/brands.json`    |
@@ -145,6 +186,15 @@ data/UG/
 
 ### Brand and logo fields
 
+1️⃣ Open the country dataset.
+
+Example:
+
+```
+data/NG/banks.json
+```
+
+2️⃣ Add the bank inside the `banks` array.
 Banks that share a corporate identity across countries should use the same `brand_slug` and point to a single entry in `data/brands.json`. Logo URLs are built at runtime from the brand `domain` using Brandfetch.
 
 Example:
