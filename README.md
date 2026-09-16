@@ -64,53 +64,17 @@ africa-bank-data/
 
 ## Data model
 
-### `data/index.json`
-Contains the list of supported countries.
+The dataset is organized as a country index plus one folder per country:
 
-### `data/<country-code>/metadata.json`
-Contains basic information about the country dataset.
+- `data/index.json` — the list of supported countries
+- `data/<country-code>/metadata.json` — country details (currency, central bank, etc.)
+- `data/<country-code>/banks.json` — the bank records for that country
 
-### `data/<country-code>/banks.json`
-Contains the bank records for one country.
+See [`docs/DATA-SCHEMA.md`](./docs/DATA-SCHEMA.md) for the full schema, including every bank field and an example record.
 
-## Bank object schema
+## Supported countries
 
-Each bank object may contain the following fields:
-
-- `name` — official institution name
-- `code` — bank or institution code used locally
-- `slug` — URL-friendly identifier
-- `short_name` — short display name
-- `ussd` — USSD code when available
-- `website` — official website
-- `support_email` — public support email when available
-- `type` — for example `commercial`, `merchant`, `microfinance`, `digital`
-- `aliases` — alternative names or search aliases
-
-Example:
-
-```json
-{
-  "name": "Access Bank",
-  "code": "044",
-  "slug": "access-bank",
-  "short_name": "Access",
-  "ussd": "*901#",
-  "website": "https://www.accessbankplc.com",
-  "support_email": "contactcenter@accessbankplc.com",
-  "type": "commercial",
-  "aliases": ["access", "access bank plc"]
-}
-```
-
-## Supported countries in this starter repo
-
-- Nigeria (`NG`)
-- Kenya (`KE`)
-- Ghana (`GH`)
-- South Africa (`ZA`)
-- Rwanda (`RW`)
-- Egypt (`EG`)
+The current list of supported countries lives in [`data/index.json`](./data/index.json).
 
 ## Quick start
 
@@ -163,17 +127,9 @@ We want this repository to be:
 - strict enough to stay clean
 - flexible enough for incomplete but useful metadata
 
-## Data quality rules
+## Data quality
 
-Before submitting changes, please make sure:
-
-- institution names use the official or widely accepted public name
-- codes are stored as strings, not numbers
-- slugs are lowercase and hyphenated
-- websites point to the official institution domain when available
-- support emails are public-facing emails only
-- optional fields can be omitted if they are unknown
-- JSON stays properly formatted
+Contributions must follow the [data quality rules](./CONTRIBUTING.md#data-quality-rules) in the contribution guide.
 
 ## Roadmap
 
