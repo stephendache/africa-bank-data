@@ -46,5 +46,21 @@
 - `ussd`: string, optional
 - `website`: string, optional
 - `support_email`: string, optional
-- `type`: string, optional
+- `type`: string, optional (for example `commercial`, `merchant`, `microfinance`, `digital`)
 - `aliases`: string[], optional
+
+## Example bank record
+
+```json
+{
+  "name": "Access Bank",
+  "code": "044",
+  "slug": "access-bank",
+  "short_name": "Access",
+  "ussd": "*901#",
+  "website": "https://www.accessbankplc.com",
+  "support_email": "contactcenter@accessbankplc.com",
+  "type": "commercial",
+  "aliases": ["access", "access bank plc"]
+}
+```
