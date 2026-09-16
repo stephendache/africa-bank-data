@@ -32,41 +32,9 @@ Even small contributions are valuable.
 
 # Project Structure
 
-```
-africa-bank-data/
-│
-├── data/
-│   ├── index.json
-│   ├── NG/
-│   │   ├── banks.json
-│   │   └── metadata.json
-│   ├── KE/
-│   │   ├── banks.json
-│   │   └── metadata.json
-│   └── GH/
-│       ├── banks.json
-│       └── metadata.json
-│
-├── logos/
-│   ├── NG/
-│   ├── KE/
-│   └── GH/
-│
-├── packages/
-│   └── js-sdk/
-│
-├── api/
-│   └── src/
-│
-├── README.md
-├── CONTRIBUTING.md
-├── LICENSE
-└── .gitignore
-```
+See the [repository structure](./README.md#repository-structure) in the README for the full layout.
 
-All country datasets live inside the **`data/` directory**.
-
-Each country has its own folder named with the **ISO 3166-1 alpha-2 country code**. Each folder contains a `banks.json` file (the bank records) and a `metadata.json` file (country details). The list of supported countries is tracked in `data/index.json`.
+All country datasets live inside the **`data/` directory**. Each country has its own folder named with the **ISO 3166-1 alpha-2 country code**, containing a `banks.json` file (the bank records) and a `metadata.json` file (country details). The list of supported countries is tracked in `data/index.json`.
 
 Example:
 
@@ -97,26 +65,7 @@ Each `data/<country-code>/banks.json` file must follow this format:
 }
 ```
 
-The `country` value must match the folder's country code.
-
-### Required Fields
-
-| Field | Description                 |
-| ----- | --------------------------- |
-| name  | Official bank name          |
-| code  | Bank code used in transfers |
-| slug  | URL-friendly identifier     |
-
-### Optional Fields
-
-| Field         | Description                              |
-| ------------- | ---------------------------------------- |
-| short_name    | Short display name                       |
-| ussd          | USSD banking code                        |
-| website       | Official institution website            |
-| support_email | Public support email                     |
-| type          | Institution type, e.g. `commercial`      |
-| aliases       | Alternative names or search aliases      |
+The `country` value must match the folder's country code. See [`docs/DATA-SCHEMA.md`](./docs/DATA-SCHEMA.md) for the full list of required and optional bank fields.
 
 ---
 
@@ -199,6 +148,20 @@ first bank
 
 ---
 
+# Data Quality Rules
+
+Before submitting changes, please make sure:
+
+* institution names use the official or widely accepted public name
+* codes are stored as strings, not numbers
+* slugs are lowercase and hyphenated
+* websites point to the official institution domain when available
+* support emails are public-facing emails only
+* optional fields can be omitted if they are unknown
+* JSON stays properly formatted
+
+---
+
 # Data Accuracy
 
 Before submitting data, please verify it using trusted sources such as:
@@ -277,14 +240,7 @@ help wanted
 
 # Code of Conduct
 
-We want Africa Bank Data to be **welcoming and inclusive**.
-
-Please:
-
-* be respectful
-* be constructive
-* support new contributors
-* focus on improving the dataset
+We want Africa Bank Data to be **welcoming and inclusive**. Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ---
 
