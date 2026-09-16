@@ -1,55 +1,16 @@
-# Contributing to Africa Bank Data
+# Contributing
 
-First of all, **thank you for contributing** to Africa Bank Data. 🎉
+You can contribute by adding a new country, updating or correcting bank records, improving the validation scripts, or fixing the docs. Single-country fixes are welcome.
 
-This project aims to build an **open, reliable dataset of African banks** that developers can use when building fintech applications, payment systems, and financial tools across the continent.
+## Project structure
 
-Because Africa has many countries and financial institutions, **community contributions are essential** to keep the data accurate and up to date.
+See the [repository structure](./README.md#repository-structure) in the README.
 
-Again, thank you for contributing.
+All datasets live in `data/`. Each country has a folder named with its ISO 3166-1 alpha-2 code, containing `banks.json` (the bank records) and `metadata.json` (country details). Supported countries are listed in `data/index.json`.
 
-This repository is designed to be easy to contribute to, even if you only want to add or fix data for one country.
+## Dataset format
 
----
-
-# Ways You Can Contribute
-
-You can contribute by:
-
-* Adding banks for a new country
-* Updating existing bank information
-* Fixing incorrect bank codes
-* Adding `ussd`, `website`, and `support_email` - where available
-* Adding bank logos
-* improving validation scripts
-* Reporting data errors
-* Building SDKs or APIs using the dataset
-
-
-Even small contributions are valuable.
-
----
-
-# Project Structure
-
-See the [repository structure](./README.md#repository-structure) in the README for the full layout.
-
-All country datasets live inside the **`data/` directory**. Each country has its own folder named with the **ISO 3166-1 alpha-2 country code**, containing a `banks.json` file (the bank records) and a `metadata.json` file (country details). The list of supported countries is tracked in `data/index.json`.
-
-Example:
-
-```
-data/NG/banks.json
-data/NG/metadata.json
-data/KE/banks.json
-data/KE/metadata.json
-```
-
----
-
-# Dataset Format
-
-Each `data/<country-code>/banks.json` file must follow this format:
+Each `data/<country-code>/banks.json` file looks like this:
 
 ```json
 {
@@ -65,50 +26,19 @@ Each `data/<country-code>/banks.json` file must follow this format:
 }
 ```
 
-The `country` value must match the folder's country code. See [`docs/DATA-SCHEMA.md`](./docs/DATA-SCHEMA.md) for the full list of required and optional bank fields.
+The `country` value must match the folder name. See [`docs/DATA-SCHEMA.md`](./docs/DATA-SCHEMA.md) for all required and optional fields.
 
----
+## Adding a country
 
-# Adding a New Country
+1. Create `data/<CODE>/` with `banks.json` and `metadata.json`.
+2. Add the banks and fill in the metadata.
+3. Add the country to `data/index.json`.
+4. Run `node scripts/validate-data.js` and make sure it passes.
+5. Open a pull request.
 
-1️⃣ Create a new folder in `data/` named with the **ISO country code**, and add a `banks.json` and a `metadata.json` file inside it.
+## Adding a bank
 
-Example:
-
-```
-data/KE/banks.json
-data/KE/metadata.json
-```
-
-2️⃣ Add the banks to `banks.json` using the standard format, and fill in `metadata.json`.
-
-3️⃣ Add the country to `data/index.json`.
-
-4️⃣ Verify that:
-
-* bank names are correct
-* bank codes are accurate
-* slugs are unique
-
-5️⃣ Run `node scripts/validate-data.js` and make sure it passes.
-
-6️⃣ Submit a Pull Request.
-
----
-
-# Adding a New Bank
-
-1️⃣ Open the country dataset.
-
-Example:
-
-```
-data/NG/banks.json
-```
-
-2️⃣ Add the bank inside the `banks` array.
-
-Example:
+Add an entry to the `banks` array in the country's `data/<CODE>/banks.json`:
 
 ```json
 {
@@ -118,140 +48,34 @@ Example:
 }
 ```
 
-3️⃣ Submit a Pull Request.
+## Naming conventions
 
----
+Slugs use lowercase letters and hyphens: `first-bank`, not `FirstBank`, `first_bank`, or `first bank`.
 
-# Naming Conventions
+## Data quality rules
 
-Please follow these rules.
+- use the official or widely accepted public name
+- store codes as strings, not numbers
+- keep slugs lowercase and hyphenated
+- link to the official institution domain when available
+- use public-facing support emails only
+- omit optional fields you can't verify
+- keep the JSON valid and formatted
 
-### Slug format
+## Data accuracy
 
-Use lowercase and hyphens.
+Verify entries against trusted sources such as central bank directories and official bank websites. Don't guess or use outdated information. If you're unsure about a field, open an issue instead.
 
-Correct:
+## Submitting a pull request
 
-```
-first-bank
-access-bank
-zenith-bank
-```
+1. Fork the repo and create a branch.
+2. Make and commit your changes.
+3. Push the branch and open a pull request with a short description.
 
-Incorrect:
+## Reporting issues
 
-```
-FirstBank
-first_bank
-first bank
-```
+Open an issue for incorrect or missing data. Include the country, the bank name, the wrong field, and the correct value if you have it.
 
----
+## Code of conduct
 
-# Data Quality Rules
-
-Before submitting changes, please make sure:
-
-* institution names use the official or widely accepted public name
-* codes are stored as strings, not numbers
-* slugs are lowercase and hyphenated
-* websites point to the official institution domain when available
-* support emails are public-facing emails only
-* optional fields can be omitted if they are unknown
-* JSON stays properly formatted
-
----
-
-# Data Accuracy
-
-Before submitting data, please verify it using trusted sources such as:
-
-* central bank directories
-* official bank websites
-* payment infrastructure providers
-* reputable fintech APIs
-
-Avoid guessing or using outdated information.
-
-If you're unsure about a field, open an issue instead.
-
----
-
-# Submitting a Pull Request
-
-1️⃣ Fork the repository
-2️⃣ Create a new branch
-
-```
-git checkout -b add-ghana-banks
-```
-
-3️⃣ Make your changes
-
-4️⃣ Commit your changes
-
-```
-git commit -m "Add Ghana banks dataset"
-```
-
-5️⃣ Push your branch
-
-```
-git push origin add-ghana-banks
-```
-
-6️⃣ Open a Pull Request
-
-Please include a short explanation of the change.
-
----
-
-# Reporting Issues
-
-If you find incorrect or missing data, please open an issue.
-
-Include:
-
-* the country
-* the bank name
-* the incorrect field
-* the correct information if available
-
----
-
-# Good First Contributions
-
-If you're new to open source, try these:
-
-* add banks for your country
-* fix incorrect slugs
-* add missing USSD codes
-* improve documentation
-* add logos
-
-Look for issues labeled:
-
-```
-good first issue
-help wanted
-```
-
----
-
-# Code of Conduct
-
-We want Africa Bank Data to be **welcoming and inclusive**. Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
-
----
-
-# Maintainers
-
-Maintained by contributors across the African developer community.
-
----
-
-# Thank You
-
-By contributing, you're helping build **open fintech infrastructure for Africa**.
-
-⭐ If you find this project useful, please star the repository and share it with other developers.
+Please read and follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
