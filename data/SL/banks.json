@@ -1,0 +1,74 @@
+{
+  "country": "SL",
+  "banks": [
+    {
+      "name": "Rokel Commercial Bank",
+      "code": "RCB",
+      "slug": "rokel-commercial-bank",
+      "short_name": "Rokel",
+      "website": "https://rcb.rokelbank.sl",
+      "type": "commercial",
+      "aliases": [
+        "rokel",
+        "rcb"
+      ]
+    },
+    {
+      "name": "Sierra Leone Commercial Bank",
+      "code": "SLCB",
+      "slug": "sierra-leone-commercial-bank",
+      "short_name": "SLCB",
+      "website": "https://slcb.com",
+      "type": "commercial",
+      "aliases": [
+        "slcb",
+        "commercial bank"
+      ]
+    },
+    {
+      "name": "Guaranty Trust Bank Sierra Leone",
+      "code": "GTB",
+      "slug": "guaranty-trust-bank-sierra-leone",
+      "short_name": "GTBank",
+      "website": "https://www.gtbank.com",
+      "type": "commercial",
+      "aliases": [
+        "gtbank sierra leone",
+        "gtb"
+      ]
+    },
+    {
+      "name": "Ecobank Sierra Leone",
+      "code": "ECO",
+      "slug": "ecobank-sierra-leone",
+      "short_name": "Ecobank",
+      "website": "https://www.ecobank.com/sl/personal-banking",
+      "type": "commercial",
+      "aliases": [
+        "ecobank sierra leone"
+      ]
+    },
+    {
+      "name": "United Bank for Africa Sierra Leone",
+      "code": "UBA",
+      "slug": "united-bank-for-africa-sierra-leone",
+      "short_name": "UBA",
+      "website": "https://www.ubasierraleone.com",
+      "type": "commercial",
+      "aliases": [
+        "uba sierra leone"
+      ]
+    },
+    {
+      "name": "Zenith Bank Sierra Leone",
+      "code": "ZEN",
+      "slug": "zenith-bank-sierra-leone",
+      "short_name": "Zenith",
+      "website": "https://www.zenithbank.com",
+      "type": "commercial",
+      "aliases": [
+        "zenith sierra leone"
+      ]
+    }
+  ]
+}

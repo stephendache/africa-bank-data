@@ -37,11 +37,34 @@
 }
 ```
 
+## Brand registry
+
+`data/brands.json`
+
+```json
+{
+  "brands": [
+    {
+      "slug": "ecobank",
+      "name": "Ecobank",
+      "domain": "ecobank.com"
+    }
+  ]
+}
+```
+
+Brand fields:
+
+- `slug`: string, required
+- `name`: string, required
+- `domain`: string, required — used to build Brandfetch logo URLs at runtime
+
 ## Bank fields
 
 - `name`: string, required
 - `code`: string, required
 - `slug`: string, required
+- `brand_slug`: string, optional — links to a shared brand in `data/brands.json`
 - `short_name`: string, optional
 - `ussd`: string, optional
 - `website`: string, optional
@@ -49,18 +72,17 @@
 - `type`: string, optional (for example `commercial`, `merchant`, `microfinance`, `digital`)
 - `aliases`: string[], optional
 
-## Example bank record
+## Bank logos
+
+Optional logos may be added under `logos/<country-code>/`.
+Use the bank slug for the filename, for example:
+
 
 ```json
 {
-  "name": "Access Bank",
-  "code": "044",
-  "slug": "access-bank",
-  "short_name": "Access",
-  "ussd": "*901#",
-  "website": "https://www.accessbankplc.com",
-  "support_email": "contactcenter@accessbankplc.com",
-  "type": "commercial",
-  "aliases": ["access", "access bank plc"]
+  "logos": [
+    "logos/GH/absa-bank-ghana.png",
+    "logos/GH/standard-chartered-bank-ghana.svg"
+  ]
 }
 ```

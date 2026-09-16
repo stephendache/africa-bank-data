@@ -1,0 +1,53 @@
+{
+  "country": "BJ",
+  "banks": [
+    {
+      "name": "Bank of Africa Benin",
+      "code": "BJ001",
+      "slug": "boa-benin",
+      "short_name": "BOA",
+      "website": "https://www.boabenin.com",
+      "type": "commercial"
+    },
+    {
+      "name": "Ecobank Benin",
+      "code": "BJ002",
+      "slug": "ecobank-benin",
+      "short_name": "Ecobank",
+      "website": "https://www.ecobank.com",
+      "type": "commercial"
+    },
+    {
+      "name": "Banque Atlantique Benin",
+      "code": "BJ003",
+      "slug": "banque-atlantique-benin",
+      "short_name": "Banque Atlantique",
+      "website": "https://www.banqueatlantique.net",
+      "type": "commercial"
+    },
+    {
+      "name": "NSIA Banque Benin",
+      "code": "BJ004",
+      "slug": "nsia-benin",
+      "short_name": "NSIA",
+      "website": "https://www.nsiabanque.com",
+      "type": "commercial"
+    },
+    {
+      "name": "Coris Bank International Benin",
+      "code": "BJ005",
+      "slug": "coris-bank-benin",
+      "short_name": "Coris",
+      "website": "https://www.coris.bank",
+      "type": "commercial"
+    },
+    {
+      "name": "Banque Internationale pour l'Industrie et le Commerce",
+      "code": "BJ006",
+      "slug": "biic",
+      "short_name": "BIIC",
+      "website": "https://www.biic.bj",
+      "type": "commercial"
+    }
+  ]
+}

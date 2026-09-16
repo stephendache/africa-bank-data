@@ -1,0 +1,74 @@
+{
+  "country": "GM",
+  "banks": [
+    {
+      "name": "Trust Bank Limited",
+      "code": "002",
+      "slug": "trust-bank-gambia",
+      "short_name": "Trust Bank",
+      "website": "https://trustbankgambia.com",
+      "type": "commercial",
+      "aliases": [
+        "trust bank",
+        "tbl"
+      ]
+    },
+    {
+      "name": "Arab Gambian Islamic Bank",
+      "code": "003",
+      "slug": "agib-bank",
+      "short_name": "AGIB",
+      "website": "https://agib.gm",
+      "type": "islamic",
+      "aliases": [
+        "agib",
+        "arab gambian islamic bank"
+      ]
+    },
+    {
+      "name": "Guaranty Trust Bank Gambia",
+      "code": "005",
+      "slug": "guaranty-trust-bank-gambia",
+      "short_name": "GTBank",
+      "website": "https://www.gtbankgambia.com",
+      "type": "commercial",
+      "aliases": [
+        "gtbank gambia",
+        "gtb"
+      ]
+    },
+    {
+      "name": "Access Bank Gambia",
+      "code": "007",
+      "slug": "access-bank-gambia",
+      "short_name": "Access",
+      "website": "https://gambia.accessbankplc.com",
+      "type": "commercial",
+      "aliases": [
+        "access gambia"
+      ]
+    },
+    {
+      "name": "Ecobank Gambia",
+      "code": "008",
+      "slug": "ecobank-gambia",
+      "short_name": "Ecobank",
+      "website": "https://www.ecobank.com/gm/personal-banking",
+      "type": "commercial",
+      "aliases": [
+        "ecobank gambia"
+      ]
+    },
+    {
+      "name": "Zenith Bank Gambia",
+      "code": "014",
+      "slug": "zenith-bank-gambia",
+      "short_name": "Zenith",
+      "website": "https://zenithbank.gm",
+      "type": "commercial",
+      "aliases": [
+        "zenith gambia"
+      ]
+    }
+  ]
+}

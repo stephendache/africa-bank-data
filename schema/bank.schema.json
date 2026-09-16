@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/jessemurah/africa-bank-data/schema/bank.schema.json",
+  "title": "Bank",
+  "description": "A single bank record in the Africa Bank Data dataset",
+  "type": "object",
+  "required": ["name", "code", "slug", "short_name", "type"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full legal name of the bank"
+    },
+    "code": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Country-specific bank code (format varies by country)"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "URL-safe lowercase identifier, unique within a country"
+    },
+    "short_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Abbreviated display name used in space-constrained UIs"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["commercial", "microfinance", "development", "mortgage"],
+      "description": "Institutional classification of the bank"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri",
+      "description": "Official bank website URL"
+    },
+    "support_email": {
+      "type": "string",
+      "format": "email",
+      "description": "Public customer support email address"
+    },
+    "ussd": {
+      "type": "string",
+      "pattern": "^\\*[0-9#*]+#$",
+      "description": "USSD shortcode for mobile banking (e.g. *901#)"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Alternative names or common misspellings used to match the bank"
+    }
+  }
+}
