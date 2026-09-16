@@ -1,7 +1,7 @@
 {
-  "name": "africa-bank-data",
+  "name": "africa-bank-data-js-sdk",
   "version": "0.1.0",
-  "description": "Open dataset of African banks for developers.",
+  "description": "Starter JS SDK for consuming the Africa Bank Data dataset.",
   "type": "module",
   "main": "src/index.js",
   "exports": {

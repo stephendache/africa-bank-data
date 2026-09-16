@@ -1,11 +1,10 @@
 import express from "express";
-import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import {
+  getSupportedCountries,
+  getBanksByCountry,
+} from "../../packages/js-sdk/src/index.js";
 
 const app = express();
-const currentDir = path.dirname(fileURLToPath(import.meta.url));
-const dataRoot = path.resolve(currentDir, "../../data");
 const port = process.env.PORT || 3000;
 const dataRoot = path.resolve(process.cwd(), "../data");
 const clientId = process.env.BRANDFETCH_CLIENT_ID ?? null;
@@ -79,12 +78,11 @@ app.get("/banks", (req, res) => {
   if (!/^[A-Z]{2}$/.test(country)) {
     return res.status(400).json({ error: `Invalid country code '${country}'` });
   }
-  const file = path.join(dataRoot, country, "banks.json");
-  if (!fs.existsSync(file)) {
+  const isSupported = getSupportedCountries().some((c) => c.code === country);
+  if (!isSupported) {
     return res.status(404).json({ error: `No data for country '${country}'` });
   }
-  const data = JSON.parse(fs.readFileSync(file, "utf8"));
-  res.json(data);
+  res.json({ country, banks: getBanksByCountry(country) });
 });
 
 app.listen(port, () => console.log(`Africa Bank Data API running on :${port}`));

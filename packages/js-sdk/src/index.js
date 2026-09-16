@@ -40,42 +40,16 @@ function getBrandsIndex() {
   return new Map(brands.map((brand) => [brand.slug, brand]));
 }
 
+function readJson(...segments) {
+  return JSON.parse(fs.readFileSync(path.join(root, ...segments), "utf8"));
+}
+
 export function getSupportedCountries() {
-  return readJson(path.join(root, "index.json")).countries;
-}
-
-export function getBrands() {
-  return readJson(path.join(root, "brands.json")).brands;
-}
-
-export function getBrandBySlug(slug) {
-  return getBrands().find((brand) => brand.slug === slug) ?? null;
+  return readJson("index.json").countries;
 }
 
 export function getBanksByCountry(countryCode) {
-  const file = path.join(root, countryCode.toUpperCase(), "banks.json");
-  return readJson(file).banks;
-}
-
-export function enrichBankWithLogo(bank, options = {}) {
-  const brandsBySlug = options.brandsBySlug ?? getBrandsIndex();
-  const brand = bank.brand_slug ? brandsBySlug.get(bank.brand_slug) ?? null : null;
-  const brandDomain = resolveBrandDomain(bank, brandsBySlug);
-  const logoUrl = getBankLogoUrl(bank, { ...options, brandsBySlug });
-
-  return {
-    ...bank,
-    brand_domain: brandDomain,
-    logo_url: logoUrl,
-    brand: brand
-      ? {
-          slug: brand.slug,
-          name: brand.name,
-          domain: brand.domain,
-          logo_url: getBrandLogoUrl(brand, options),
-        }
-      : null,
-  };
+  return readJson(countryCode.toUpperCase(), "banks.json").banks;
 }
 
 export function getBanksByCountryWithLogos(countryCode, options = {}) {
