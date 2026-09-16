@@ -109,14 +109,11 @@ Example:
 }
 ```
 
-## Supported countries in this starter repo
+See [`docs/DATA-SCHEMA.md`](./docs/DATA-SCHEMA.md) for the full schema, including every bank field and an example record.
 
-- Nigeria (`NG`)
-- Kenya (`KE`)
-- Ghana (`GH`)
-- South Africa (`ZA`)
-- Rwanda (`RW`)
-- Egypt (`EG`)
+## Supported countries
+
+The current list of supported countries lives in [`data/index.json`](./data/index.json).
 
 ## Quick start
 
@@ -184,17 +181,9 @@ We want this repository to be:
 - strict enough to stay clean
 - flexible enough for incomplete but useful metadata
 
-## Data quality rules
+## Data quality
 
-Before submitting changes, please make sure:
-
-- institution names use the official or widely accepted public name
-- codes are stored as strings, not numbers
-- slugs are lowercase and hyphenated
-- websites point to the official institution domain when available
-- support emails are public-facing emails only
-- optional fields can be omitted if they are unknown
-- JSON stays properly formatted
+Contributions must follow the [data quality rules](./CONTRIBUTING.md#data-quality-rules) in the contribution guide.
 
 ## Roadmap
 

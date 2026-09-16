@@ -69,7 +69,7 @@ Brand fields:
 - `ussd`: string, optional
 - `website`: string, optional
 - `support_email`: string, optional
-- `type`: string, optional
+- `type`: string, optional (for example `commercial`, `merchant`, `microfinance`, `digital`)
 - `aliases`: string[], optional
 
 ## Bank logos
